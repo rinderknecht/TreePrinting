@@ -1,0 +1,8 @@
+(library
+  (name TreePrinting)
+  (public_name TreePrinting)
+  (libraries
+    ;; Third party
+    SourceLoc
+    Utilities)
+  (modules Tree))

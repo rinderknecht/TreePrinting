@@ -1,0 +1,21 @@
+opam-version : "2.0"
+name         : "TreePrinting"
+version      : "1.0"
+synopsis     : "Printing Catalan (rose) trees for OCaml"
+authors      : ["Christian Rinderknecht"]
+maintainer   : "rinderknecht@free.fr"
+homepage     : "https://github.com/rinderknecht/TreePrinting"
+bug-reports  : "https://github.com/rinderknecht/TreePrinting/issues"
+dev-repo     : "git+https://github.com/rinderknecht/TreePrinting.git"
+license      : "MIT"
+# If you change the dependencies, run `opam lock` in the root
+depends      : ["dune" "SourceLoc" "Utilities"]
+build        : [["dune" "build" "-p" name]]
+pin-depends  : [["SourceLoc.1.0"
+                 "git+https://github.com/rinderknecht/SourceLoc.git"]
+                ["Utilities.1.0"
+                 "git+https://github.com/rinderknecht/Utilities.git"]]
+
+url {
+  src: "https://github.com/rinderknecht/Utilities/-/archive/master/TreePrinting.tar.gz"
+}
